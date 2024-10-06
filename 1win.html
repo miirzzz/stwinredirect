@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Играть</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #b2ebf2;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1em;
+            margin-bottom: 30px;
+        }
+
+        .play-button {
+            background-color: transparent;
+            color: white;
+            font-size: 1.5em;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: background-color 0.3s, transform 0.2s, border-color 0.3s;
+            position: relative;
+        }
+
+        .play-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            z-index: -1;
+        }
+
+        .play-button:hover {
+            border-color: #b2ebf2;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Видео на фоне -->
+    <video class="video-bg" autoplay loop muted>
+        <source src="C:\\Users\\mirz\\Downloads\\2nd.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+
+    <!-- Навигационное меню -->
+    <nav class="navbar">
+        <a href="https://1wxwtv.life/casino/list?open=register&p=qlqy" class="nav-link">Home</a>
+        <a href="https://www.youtube.com/@fuckwinterarc" class="nav-link">Products</a>
+        <a href="https://t.me/fluxcoreteam" class="nav-link">About</a>
+        <a href="https://t.me/fluxcoreteam" class="nav-link">Contacts</a>
+    </nav>
+
+    <!-- Содержимое страницы -->
+    <div class="content">
+        <h1>Добро пожаловать</h1>
+        <p>Окунись в мир непередаваемых ощущений</p>
+        <button class="play-button" onclick="window.location.href='https://1wxwtv.life/casino/list?open=register&p=qlqy'">
+            Играть
+        </button>
+    </div>
+</body>
+</html>
